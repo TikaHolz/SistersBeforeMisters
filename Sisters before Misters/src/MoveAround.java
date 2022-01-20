@@ -70,8 +70,9 @@ public class MoveAround
 		
 					//set place to current place + or - 
 					chanceMove = ChanceRunner.cards.get(0).getChangePlace();
-//					MonopolyRunner.player1.setPlace(MonopolyRunner.player1.getPlace() + chanceMove);
-//					System.out.println("You are now on " + MonopolyRunner.player1.getPlace() );
+					MonopolyRunner.player1.setPlace(MonopolyRunner.player1.getPlace() + chanceMove);
+					//for()
+					System.out.println("You are now on " + MonopolyRunner.player1.getPlace() );
 					
 					//set money
 					chanceBalance = ChanceRunner.cards.get(0).getMoney();
