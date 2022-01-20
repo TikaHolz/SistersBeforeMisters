@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Prices
 	{
-
+	static Player1Inventory player1;
 		public static void main(String[] args)
 			{
 
@@ -27,6 +27,7 @@ public class Prices
 										BoardArrayList.boardList.get(MonopolyRunner.player1.getPlace()).setTaken(true);
 										MonopolyRunner.player1.setBalance((MonopolyRunner.player1.getBalance() - (BoardArrayList.boardList.get(MonopolyRunner.player1.getPlace()).getRent())));
 										System.out.println("Your current balance is: " + MonopolyRunner.player1.getBalance() + " dollars");
+										player1 = new Player1Inventory(BoardArrayList.boardList.get(MonopolyRunner.player1.getPlace()).getName(), BoardArrayList.boardList.get(MonopolyRunner.player1.getPlace()).getRent());
 									}
 
 								else

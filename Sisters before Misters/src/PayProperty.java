@@ -39,14 +39,6 @@ public class PayProperty
 				Tundratown gg = new Tundratown();
 				ZootopiaTrain hh = new ZootopiaTrain();
 				
-				//if(Player.getPlace() = a.Place)
-					
-<<<<<<< HEAD
-						//a.place();
-					
-=======
->>>>>>> upstream/master
-				
 
 			}
 

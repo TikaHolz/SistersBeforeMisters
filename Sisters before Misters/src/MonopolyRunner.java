@@ -5,9 +5,11 @@ public class MonopolyRunner
 	{
 		// tester please ignore this comment
 		static Scanner input = new Scanner(System.in);
+		static Scanner inputInt = new Scanner(System.in);
 		static String name;
 		static String enter;
 		static Player player1;
+;
 
 		public static void main(String[] args)
 			{
@@ -15,6 +17,7 @@ public class MonopolyRunner
 				ChanceRunner.shuffle();
 				introduction();
 				BoardArrayList.fillList();
+				
 				while(MonopolyRunner.player1.getBalance() > 0)
 					{
 						
@@ -34,7 +37,7 @@ public class MonopolyRunner
 			{
 
 			System.out.println("Hello and welcome to Disnopoly! ");
-			System.out.println("What is your name Player? ");
+			System.out.println("What is your name Player1? ");
 			name = input.nextLine();
 			player1 = new Player(name, 1500, 0);
 			System.out.println("\nWelcome " + name + "!!");
@@ -43,6 +46,7 @@ public class MonopolyRunner
 			enter = input.nextLine();
 			
 			}
+		
 
 		public static void PassGoMain()
 			{

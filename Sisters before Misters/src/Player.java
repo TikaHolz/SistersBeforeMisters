@@ -5,12 +5,14 @@ public class Player
 		private String character;
 		private int balance;
 		private int place;
+
 		
 		public Player(String c, int b, int p)
 			{
 				character = c;
 				balance = b;
 				place = p;
+				
 			}
 
 		public String getCharacter()

@@ -17,6 +17,7 @@ public class MoveAround
 		
 		public static void startMoving()
 			{
+				Inventory();
 				System.out.println("OK let's roll the dice");
 				System.out.println("Press enter to roll");
 				enter2 = input.nextLine();
@@ -27,7 +28,19 @@ public class MoveAround
 				
 			}
 
-
+		public static void Inventory()
+			{
+			System.out.println("Would You like to show your owned spaces?");
+			System.out.println("\n(1) Yes");
+			System.out.println("\n(2) No");
+			int inventory = input.nextInt();
+			
+			if(inventory == 1)
+				{
+				//Player1Inventory.ShowInventory();
+				//System.out.println(Player1Inventory.getName());
+				}
+			}
 		
 		public static void moveSpaces()
 		{
